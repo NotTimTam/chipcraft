@@ -14,8 +14,7 @@ libsdl1.2-dev
 
 License
 ----
-Public Domain
-
+NONE
 
 
 
