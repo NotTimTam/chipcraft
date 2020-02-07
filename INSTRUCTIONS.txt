@@ -1,0 +1,6 @@
+Extract the folder to  //home/chip
+Run build.sh by double clicking it, or selecting it and pressing ENTER
+A folder called MCPI will appear. Open it and run the start.sh file.
+Minecraft Pi Edition will open! DONE!
+
+Note, moving the window or trying to resize it will crash the game!

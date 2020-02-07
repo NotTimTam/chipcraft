@@ -1,0 +1,30 @@
+From d8c861deeb7136f82155f74e58d978bdb1e9e827 Mon Sep 17 00:00:00 2001
+From: Alex Kaplan <alex@nextthing.co>
+Date: Fri, 9 Dec 2016 19:34:19 -0800
+Subject: [PATCH] Set PocketCHIP screen resolution
+
+---
+ bcm_host.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/bcm_host.c b/bcm_host.c
+index 83ba413..bd20e7a 100644
+--- a/bcm_host.c
++++ b/bcm_host.c
+@@ -372,10 +372,10 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
+ 
+ int32_t graphics_get_display_size( const uint16_t display_number, uint32_t *width, uint32_t *height) {
+ 	printf("graphics_get_display_size(%d, %p, %p)\n", display_number, width, height);
+-	*width = default;
+-	*height = default;
++	*width = default;
++	*height = default;
+ 
+-	SDL_SetVideoMode(*width, *height, 1000, SDL_FULLSCREEN);// | SDL_RESIZABLE);
++	SDL_SetVideoMode(*width, *height, 1000, SDL_RESIZABLE);
+ 	return 0;
+ }
+ 
+-- 
+1.9.1
+
